@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Button from '../components/Button.jsx';
+import heroImage from '../assets/images/hero.jpg';
 import './Hero.css';
 
 function Hero() {
@@ -45,7 +46,7 @@ function Hero() {
 
       <div className={`hero__image-wrap ${isVisible ? 'hero__image-wrap--visible' : ''}`}>
         <img
-          src="/src/assets/images/hero.jpg"
+          src={heroImage}
           alt="Elegant event setting with gold accents"
           className="hero__image"
         />

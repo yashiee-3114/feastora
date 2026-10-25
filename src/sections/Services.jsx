@@ -1,3 +1,5 @@
+import corporateImage from '../assets/images/corporate.jpg';
+import socialImage from '../assets/images/social.jpg';
 import './Services.css';
 
 const CORPORATE_ITEMS = [
@@ -30,7 +32,7 @@ function Services() {
         <article className="services__card services__card--corporate">
           <div className="services__card-image-wrap">
             <img
-              src="/src/assets/images/corporate.jpg"
+              src={corporateImage}
               alt="Corporate conference stage"
               className="services__card-image"
             />
@@ -55,7 +57,7 @@ function Services() {
         <article className="services__card services__card--social">
           <div className="services__card-image-wrap">
             <img
-              src="/src/assets/images/social.jpg"
+              src={socialImage}
               alt="Elegant wedding reception with gold decor"
               className="services__card-image"
             />
