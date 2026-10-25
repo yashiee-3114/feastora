@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--color-ivory);
-  border-bottom: 1px solid rgba(28, 26, 23, 0.08);
+  background: var(--color-black);
+  border-bottom: 1px solid rgba(201, 162, 75, 0.15);
 }
 
 .nav__container {
@@ -17,11 +17,20 @@
 }
 
 .nav__wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.85rem;
   font-weight: 600;
-  color: var(--color-ink);
+  color: var(--color-gold-bright);
   letter-spacing: -0.01em;
+}
+
+.nav__wordmark-mark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
 .nav__links--desktop {
@@ -32,7 +41,7 @@
 .nav__link {
   font-size: var(--fs-body);
   font-weight: 500;
-  color: var(--color-ink);
+  color: var(--color-cream);
   position: relative;
   padding: 0.25rem 0;
 }
@@ -44,7 +53,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background: var(--color-cobalt);
+  background: var(--color-gold);
   transition: width var(--duration-base) var(--ease-standard);
 }
 
@@ -67,7 +76,7 @@
 .nav__toggle-bar {
   width: 22px;
   height: 2px;
-  background: var(--color-ink);
+  background: var(--color-cream);
   transition: transform var(--duration-base) var(--ease-standard),
               opacity var(--duration-base) var(--ease-standard);
 }
@@ -103,7 +112,7 @@
 .nav__mobile-link {
   font-size: var(--fs-body-lg);
   font-weight: 500;
-  color: var(--color-ink);
+  color: var(--color-cream);
   padding: var(--space-xs) 0;
 }
 

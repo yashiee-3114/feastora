@@ -1,6 +1,7 @@
 .footer {
-  background: var(--color-ink);
-  color: var(--color-ivory);
+  background: var(--color-black-soft);
+  color: var(--color-cream);
+  border-top: 1px solid rgba(201, 162, 75, 0.2);
   padding: var(--space-2xl) var(--container-padding) var(--space-lg);
   margin-top: var(--space-3xl);
 }
@@ -12,7 +13,7 @@
   grid-template-columns: 1fr;
   gap: var(--space-xl);
   padding-bottom: var(--space-xl);
-  border-bottom: 1px solid rgba(247, 242, 233, 0.15);
+  border-bottom: 1px solid rgba(201, 162, 75, 0.15);
 }
 
 .footer__wordmark {
@@ -20,14 +21,13 @@
   font-family: var(--font-display);
   font-size: var(--fs-h3);
   font-weight: 600;
-  color: var(--color-ivory);
+  color: var(--color-gold-bright);
   margin-bottom: var(--space-sm);
 }
 
 .footer__tagline {
   font-size: var(--fs-body);
-  color: var(--color-ivory);
-  opacity: 0.65;
+  color: var(--color-cream-dim);
   max-width: 280px;
 }
 
@@ -39,30 +39,28 @@
 
 .footer__link {
   font-size: var(--fs-body);
-  color: var(--color-ivory);
-  opacity: 0.8;
+  color: var(--color-cream-dim);
 }
 
 .footer__link:hover,
 .footer__link:focus-visible {
-  opacity: 1;
+  color: var(--color-gold);
   text-decoration: underline;
 }
 
 .footer__contact-label {
   display: block;
   font-size: var(--fs-small);
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.5;
+  color: var(--color-gold);
   margin-bottom: var(--space-sm);
 }
 
 .footer__contact-placeholder {
   font-size: var(--fs-body);
-  color: var(--color-ivory);
-  opacity: 0.65;
+  color: var(--color-cream-dim);
 }
 
 .footer__bottom {
@@ -73,7 +71,7 @@
 
 .footer__copyright {
   font-size: var(--fs-small);
-  color: var(--color-ivory);
+  color: var(--color-cream-dim);
   opacity: 0.5;
 }
 

@@ -11,7 +11,6 @@ const LINKS = [
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close mobile menu on Escape
   useEffect(() => {
     function handleKeyDown(e) {
       if (e.key === 'Escape') setIsOpen(false);
@@ -28,6 +27,25 @@ function Nav() {
     <header className="nav">
       <div className="nav__container">
         <a href="#top" className="nav__wordmark" aria-label="Feastora — home">
+          <svg
+            className="nav__wordmark-mark"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M24 6c-1 5-5 7-9 8 4 2 7 5 8 9 1-4 4-7 8-9-4-1-8-3-7-8z"
+              fill="currentColor"
+            />
+            <path
+              d="M24 20c-3 6-9 9-16 9 5 3 11 4 16 2 5 2 11 1 16-2-7 0-13-3-16-9z"
+              stroke="currentColor"
+              strokeWidth="1.4"
+              fill="none"
+            />
+            <circle cx="24" cy="15" r="1.4" fill="currentColor" />
+          </svg>
           Feastora
         </a>
 

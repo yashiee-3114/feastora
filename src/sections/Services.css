@@ -44,17 +44,45 @@
   background: var(--color-charcoal);
   border: 1px solid rgba(201, 162, 75, 0.2);
   transition: transform var(--duration-base) var(--ease-standard),
-              border-color var(--duration-base) var(--ease-standard);
+              border-color var(--duration-base) var(--ease-standard),
+              box-shadow var(--duration-base) var(--ease-standard);
 }
 
 .services__card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   border-color: var(--color-gold);
+  box-shadow: 0 24px 48px -16px rgba(201, 162, 75, 0.35);
+}
+
+.services__card::before {
+  content: '';
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 28px;
+  height: 28px;
+  border-top: 1.5px solid var(--color-gold);
+  border-right: 1.5px solid var(--color-gold);
+  opacity: 0;
+  transition: opacity var(--duration-base) var(--ease-standard);
+  z-index: 2;
+}
+
+.services__card:hover::before {
+  opacity: 0.8;
 }
 
 .services__card-image-wrap {
+  position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
+}
+
+.services__card-image-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, var(--color-charcoal) 100%);
 }
 
 .services__card-image {
@@ -66,30 +94,35 @@
 }
 
 .services__card:hover .services__card-image {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
 
 .services__card-body {
   padding: var(--space-lg);
+  margin-top: -2.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .services__card-label {
   display: inline-block;
   font-size: var(--fs-small);
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.35rem 0.9rem;
+  padding: 0.4rem 1rem;
   border-radius: var(--radius-pill);
-  background: rgba(201, 162, 75, 0.15);
-  color: var(--color-gold-bright);
+  background: var(--color-gold);
+  color: var(--color-black);
   margin-bottom: var(--space-md);
+  box-shadow: 0 4px 12px rgba(201, 162, 75, 0.3);
 }
 
 .services__card-title {
   font-size: var(--fs-h2);
   margin-bottom: var(--space-lg);
   color: var(--color-cream);
+  letter-spacing: -0.01em;
 }
 
 .services__list {

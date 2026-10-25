@@ -2,7 +2,7 @@ import Nav from './sections/Nav.jsx';
 import Hero from './sections/Hero.jsx';
 import Services from './sections/Services.jsx';
 import Approach from './sections/Approach.jsx';
-import Concept from './sections/Concept.jsx';
+import Gallery from './sections/Gallery.jsx';
 import WhyFeastora from './sections/WhyFeastora.jsx';
 import FAQ from './sections/FAQ.jsx';
 import Contact from './sections/Contact.jsx';
@@ -16,7 +16,7 @@ function App() {
         <Hero />
         <Services />
         <Approach />
-        <Concept />
+        <Gallery />
         <WhyFeastora />
         <FAQ />
         <Contact />

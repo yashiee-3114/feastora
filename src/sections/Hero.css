@@ -16,9 +16,12 @@
 }
 
 .hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
   font-size: var(--fs-small);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-gold);
   margin-bottom: var(--space-md);
@@ -28,6 +31,13 @@
               transform var(--duration-slow) var(--ease-standard);
 }
 
+.hero__eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1.5px;
+  background: var(--color-gold);
+}
+
 .hero__eyebrow--visible {
   opacity: 1;
   transform: translateY(0);
@@ -35,9 +45,9 @@
 
 .hero__headline {
   font-family: var(--font-display);
-  font-size: var(--fs-hero);
+  font-size: clamp(2.25rem, 4.5vw + 1rem, 4.75rem);
   font-weight: 600;
-  line-height: var(--lh-tight);
+  line-height: 1.22;
   letter-spacing: -0.02em;
   color: var(--color-cream);
   margin-bottom: var(--space-lg);
@@ -94,6 +104,8 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 4 / 5;
+  border: 1px solid rgba(201, 162, 75, 0.25);
+  box-shadow: 0 32px 64px -24px rgba(0, 0, 0, 0.6);
   opacity: 0;
   transform: translateY(24px);
   transition: opacity var(--duration-slow) var(--ease-standard) 150ms,

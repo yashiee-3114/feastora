@@ -12,16 +12,16 @@
 .faq__eyebrow {
   display: block;
   font-size: var(--fs-small);
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-terracotta);
+  color: var(--color-gold);
   margin-bottom: var(--space-sm);
 }
 
 .faq__title {
   font-size: var(--fs-h1);
-  color: var(--color-ink);
+  color: var(--color-cream);
 }
 
 .faq__list {
@@ -30,11 +30,11 @@
 }
 
 .faq__item {
-  border-top: 1px solid rgba(28, 26, 23, 0.12);
+  border-top: 1px solid rgba(201, 162, 75, 0.2);
 }
 
 .faq__item:last-child {
-  border-bottom: 1px solid rgba(28, 26, 23, 0.12);
+  border-bottom: 1px solid rgba(201, 162, 75, 0.2);
 }
 
 .faq__question {
@@ -45,7 +45,7 @@
   padding: var(--space-md) 0;
   font-size: var(--fs-body-lg);
   font-weight: 600;
-  color: var(--color-ink);
+  color: var(--color-cream);
   cursor: pointer;
   list-style: none;
 }
@@ -55,14 +55,14 @@
 }
 
 .faq__question:focus-visible {
-  outline: 2px solid var(--color-cobalt);
+  outline: 2px solid var(--color-gold);
   outline-offset: 4px;
 }
 
 .faq__icon {
   font-size: 1.5rem;
   font-weight: 300;
-  color: var(--color-cobalt);
+  color: var(--color-gold);
   transition: transform var(--duration-base) var(--ease-standard);
   flex-shrink: 0;
 }
@@ -73,8 +73,7 @@
 
 .faq__answer {
   padding-bottom: var(--space-lg);
-  color: var(--color-ink);
-  opacity: 0.75;
+  color: var(--color-cream-dim);
   line-height: var(--lh-normal);
   max-width: 620px;
 }
