@@ -1,0 +1,125 @@
+.concept {
+  padding: var(--space-3xl) var(--container-padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.concept__header {
+  max-width: 640px;
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.concept__eyebrow {
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-sm);
+}
+
+.concept__title {
+  font-size: var(--fs-h1);
+  color: var(--color-ink);
+  margin-bottom: var(--space-md);
+}
+
+.concept__disclaimer {
+  font-size: var(--fs-small);
+  color: var(--color-ink);
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.concept__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.concept__tile {
+  position: relative;
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4 / 3;
+  padding: var(--space-lg);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.concept__tile--cobalt {
+  background: #DCE4FB;
+}
+
+.concept__tile--coral {
+  background: #FFE4DB;
+}
+
+.concept__tile--butter {
+  background: #FBF0C8;
+}
+
+.concept__tile-label {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  color: var(--color-ink);
+}
+
+.concept__tile-graphic {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Stage lighting beams */
+.concept__beam {
+  position: absolute;
+  top: -20%;
+  width: 60px;
+  height: 160%;
+  background: var(--color-cobalt);
+  opacity: 0.18;
+  transform: rotate(18deg);
+}
+
+.concept__beam:nth-child(1) { left: 10%; }
+.concept__beam:nth-child(2) { left: 40%; opacity: 0.12; }
+.concept__beam:nth-child(3) { left: 70%; opacity: 0.22; }
+
+/* Invitation fold lines */
+.concept__fold-line {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: var(--color-coral);
+  opacity: 0.4;
+}
+
+.concept__fold-line:nth-child(1) { top: 33%; }
+.concept__fold-line:nth-child(2) { top: 66%; }
+
+/* Table layout dots */
+.concept__grid-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-butter);
+  opacity: 0.6;
+}
+
+.concept__grid-dot:nth-child(1) { top: 20%; left: 20%; }
+.concept__grid-dot:nth-child(2) { top: 20%; left: 75%; }
+.concept__grid-dot:nth-child(3) { top: 65%; left: 30%; }
+.concept__grid-dot:nth-child(4) { top: 70%; left: 80%; }
+
+@media (min-width: 768px) {
+  .concept__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

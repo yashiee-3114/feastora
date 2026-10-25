@@ -1,0 +1,69 @@
+:root {
+  /* Colors — black/gold/cream premium palette */
+  --color-black: #0A0908;
+  --color-black-soft: #15130F;
+  --color-charcoal: #1F1C17;
+  --color-cream: #F5EFE2;
+  --color-cream-dim: #E8DFC8;
+  --color-gold: #C9A24B;
+  --color-gold-bright: #E0BA6A;
+  --color-gold-dim: #8A7238;
+  --color-white: #FFFFFF;
+
+  /* Semantic aliases (kept for compatibility with existing components) */
+  --color-ivory: var(--color-black);
+  --color-ink: var(--color-cream);
+  --color-cobalt: var(--color-gold);
+  --color-coral: var(--color-gold-bright);
+  --color-terracotta: var(--color-charcoal);
+  --color-butter: var(--color-gold);
+  --color-cream-alt: var(--color-black-soft);
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  --fs-hero: clamp(2.75rem, 6vw + 1rem, 6.5rem);
+  --fs-h1: clamp(2.25rem, 4vw + 1rem, 4rem);
+  --fs-h2: clamp(1.75rem, 2.5vw + 1rem, 2.75rem);
+  --fs-h3: clamp(1.25rem, 1.5vw + 1rem, 1.75rem);
+  --fs-body-lg: 1.25rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  --lh-tight: 1.05;
+  --lh-normal: 1.5;
+
+  /* Spacing (8px base scale) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* Layout */
+  --max-width: 1280px;
+  --container-padding: clamp(1.25rem, 5vw, 4rem);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}
